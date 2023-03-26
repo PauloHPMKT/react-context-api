@@ -2,7 +2,7 @@ import * as React from "react";
 import { TodoContextType, ITodo } from "../types/todo";
 
 // this is my context
-export const MyToDoListContext = React.createContext<TodoContextType | null>(null);
+export const MyToDoListContext = React.createContext<TodoContextType | any>('');
 
 interface ChildrenProps {
 	children: JSX.Element[] | React.ReactElement | React.ReactNode
